@@ -1,0 +1,5 @@
+ALTER TABLE traffic_aggregates
+ADD COLUMN IF NOT EXISTS sum_occupancy DOUBLE PRECISION DEFAULT 0;
+
+ALTER TABLE traffic_aggregates
+ADD COLUMN IF NOT EXISTS average_occupancy DOUBLE PRECISION DEFAULT 0;
